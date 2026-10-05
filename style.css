@@ -1,377 +1,562 @@
+/* ==========================================================================
+   EVENTHUB - Black-White Minimalist Custom Styling
+   ========================================================================== */
+
+/* --- Root Variables (Monochrome Palette & Typography) --- */
 :root {
-    --primary-color: #635bff;
-    --primary-dark: #4c46c7;
-    --dark-color: #111827;
-    --text-color: #4b5563;
-    --light-bg: #f8fafc;
-    --white: #ffffff;
-    --border-color: #e5e7eb;
+  --bg-main: #0c0c0c;
+  --bg-card: #141414;
+  --bg-card-hover: #1c1c1c;
+  --border-color: #262626;
+  --border-light: #404040;
+  --text-primary: #f5f5f5;
+  --text-muted: #a3a3a3;
+  --accent-white: #ffffff;
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --transition-fast: 0.25s ease;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
+/* --- Global Styles --- */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--text-color);
-    background-color: var(--white);
-    line-height: 1.6;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  letter-spacing: -0.01em;
+  overflow-x: hidden;
 }
 
-section {
-    scroll-margin-top: 70px;
-}
-
-/* NAVBAR */
+/* --- Navigation Bar --- */
 .navbar {
-    padding: 16px 0;
+  background-color: rgba(12, 12, 12, 0.85) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.25rem 0;
 }
 
 .navbar-brand {
-    letter-spacing: 1px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  font-size: 1.25rem;
+  color: var(--accent-white) !important;
 }
 
 .nav-link {
-    margin-left: 15px;
-    transition: color 0.2s ease;
+  color: var(--text-muted) !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color var(--transition-fast);
 }
 
-.nav-link:hover {
-    color: #a5b4fc !important;
+.nav-link:hover, .nav-link:focus {
+  color: var(--accent-white) !important;
 }
 
-/* HERO SECTION */
+/* --- Hero Section --- */
 .hero-section {
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    background:
-        linear-gradient(
-            135deg,
-            #eef2ff 0%,
-            #ffffff 55%,
-            #f5f3ff 100%
-        );
-    padding: 80px 0;
+  padding: 8rem 0 5rem 0;
+  border-bottom: 1px solid var(--border-color);
 }
 
-.hero-label,
-.section-label {
-    color: var(--primary-color);
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
+.hero-label {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--border-light);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
 }
 
 .hero-title {
-    font-size: clamp(3rem, 7vw, 5.5rem);
-    line-height: 0.95;
-    font-weight: 800;
-    color: var(--dark-color);
-    margin-bottom: 25px;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
 }
 
 .hero-title span {
-    color: var(--primary-color);
+  color: var(--text-muted);
 }
 
 .hero-description {
-    max-width: 600px;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-}
-
-.btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-}
-
-.btn-primary:hover {
-    background-color: var(--primary-dark);
-    border-color: var(--primary-dark);
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  max-width: 540px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
 .hero-card {
-    padding: 40px;
-    background-color: var(--dark-color);
-    color: var(--white);
-    border-radius: 24px;
-    box-shadow: 0 20px 50px rgba(17, 24, 39, 0.18);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2.5rem;
+  border-radius: 16px;
+  position: relative;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.hero-card:hover {
+  border-color: var(--border-light);
+  transform: translateY(-4px);
 }
 
 .hero-card-number {
-    display: block;
-    font-size: 5rem;
-    font-weight: 800;
-    line-height: 1;
-    color: #a5b4fc;
-    margin-bottom: 20px;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--border-light);
+  line-height: 1;
 }
 
-.hero-card p {
-    margin-bottom: 8px;
-    color: #d1d5db;
+.hero-card-line {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 1.5rem 0;
 }
 
-/* SECTIONS */
+.hero-card-meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* --- Section Formatting --- */
 .section-padding {
-    padding: 100px 0;
+  padding: 6rem 0;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .section-heading {
-    max-width: 700px;
+  max-width: 600px;
+}
+
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 .section-heading h2 {
-    color: var(--dark-color);
-    font-size: 2.5rem;
-    font-weight: 750;
-    margin-bottom: 15px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
 }
 
-.section-heading > p:last-child {
-    margin-bottom: 0;
+.section-heading p {
+  color: var(--text-muted);
+  font-size: 1rem;
 }
 
-/* INFO BOX */
+/* --- Info Cards (About Section) --- */
 .info-box {
-    height: 100%;
-    padding: 30px;
-    border: 1px solid var(--border-color);
-    border-radius: 18px;
-    background-color: var(--white);
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 12px;
+  height: 100%;
+  transition: border-color var(--transition-fast);
 }
 
 .info-box:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  border-color: var(--border-light);
 }
 
 .info-icon {
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    background-color: #eef2ff;
-    color: var(--primary-color);
-    font-weight: 700;
-    margin-bottom: 20px;
+  font-size: 1.75rem;
+  color: var(--accent-white);
+  margin-bottom: 1.25rem;
 }
 
 .info-box h3 {
-    color: var(--dark-color);
-    font-size: 1.25rem;
-    margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
 }
 
-/* WORKSHOP */
-.workshop-section {
-    background-color: var(--light-bg);
+.info-box p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
 }
 
+/* --- Workshop Cards --- */
 .workshop-card {
-    border: 1px solid var(--border-color);
-    border-radius: 20px;
-    overflow: hidden;
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .workshop-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: var(--border-light) !important;
+  transform: translateY(-6px);
 }
 
-.workshop-number {
-    padding: 20px 25px 0;
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 0.9rem;
+.workshop-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
 }
 
-.workshop-card .card-body {
-    padding: 25px;
+.workshop-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(110%);
+  transition: filter var(--transition-fast), transform var(--transition-fast);
 }
 
-.workshop-card .card-title {
-    color: var(--dark-color);
-    font-size: 1.5rem;
-    font-weight: 700;
+.workshop-card:hover .workshop-image {
+  filter: grayscale(0%) contrast(100%);
+  transform: scale(1.05);
 }
 
-.workshop-card .card-text {
-    min-height: 100px;
+.workshop-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(12, 12, 12, 0.8);
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(8px);
+  color: var(--accent-white);
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.card-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.workshop-category {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.card-text {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.workshop-details {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.workshop-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.workshop-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
 }
 
 .workshop-price {
-    color: var(--primary-color);
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent-white);
 }
 
-.workshop-info {
-    font-size: 0.85rem;
-    color: #6b7280;
-    margin-top: 8px;
+.workshop-status {
+  font-size: 0.75rem;
+  border: 1px solid var(--border-light);
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
+  color: var(--text-muted);
 }
 
-/* TABLE */
+/* --- Schedule Table --- */
+.table-wrapper {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 .schedule-table {
-    background-color: var(--white);
-    vertical-align: middle;
+  margin-bottom: 0 !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
 }
 
-.schedule-table thead th {
-    background-color: var(--dark-color);
-    color: var(--white);
-    padding: 15px;
+.schedule-table th {
+  background-color: #1a1a1a !important;
+  color: var(--text-muted) !important;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-color) !important;
 }
 
-.schedule-table tbody td {
-    padding: 15px;
+.schedule-table td {
+  background-color: transparent !important;
+  color: var(--text-primary) !important;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-color) !important;
+  font-size: 0.9rem;
 }
 
-/* REGISTRATION */
-.registration-section {
-    background-color: #f9fafb;
+/* --- Registration Form & Selection --- */
+.form-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
 }
 
-.registration-section .form-label {
-    color: var(--dark-color);
-    font-weight: 600;
+.form-control, .form-select {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+  border-radius: 8px !important;
+  padding: 0.75rem 1rem !important;
+  font-size: 0.9rem !important;
+  transition: border-color var(--transition-fast) !important;
 }
 
-.form-control,
-.form-select {
-    padding: 12px 14px;
-    border-color: #d1d5db;
+.form-control:focus, .form-select:focus {
+  border-color: var(--accent-white) !important;
+  box-shadow: none !important;
 }
 
-.form-control:focus,
-.form-select:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgba(99, 91, 255, 0.15);
+.form-control::placeholder {
+  color: #525252 !important;
 }
 
-/* SUMMARY */
+.participant-options {
+  display: flex;
+  gap: 1rem;
+}
+
+.participant-options .form-check {
+  flex: 1;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1rem 0.75rem 2.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color var(--transition-fast);
+}
+
+.participant-options .form-check:hover {
+  border-color: var(--border-light);
+}
+
+.workshop-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.selection-option {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.selection-option:hover {
+  border-color: var(--border-light);
+}
+
+.selection-option input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+.selection-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-content small {
+  color: var(--text-muted);
+}
+
+.selection-check {
+  margin-left: auto;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.selection-option input:checked ~ .selection-check {
+  opacity: 1;
+  color: var(--accent-white);
+}
+
+/* Custom CSS State untuk Visual Change (Memenuhi Syarat UTS CSS) */
+.selection-option.selected-active {
+  border-color: var(--accent-white) !important;
+  background-color: var(--bg-card-hover) !important;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+  background-color: var(--accent-white) !important;
+  border-color: var(--accent-white) !important;
+  color: #000000 !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  padding: 0.8rem 1.75rem !important;
+  font-size: 0.95rem !important;
+  transition: opacity var(--transition-fast), transform var(--transition-fast) !important;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* --- Summary Card --- */
 .summary-card {
-    position: sticky;
-    top: 100px;
-    padding: 30px;
-    background-color: var(--dark-color);
-    color: var(--white);
-    border-radius: 20px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2rem;
+  position: sticky;
+  top: 100px;
 }
 
 .summary-card h3 {
-    margin-bottom: 25px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
-.summary-content {
-    border-top: 1px solid #374151;
-    padding-top: 20px;
-}
-
-.summary-item {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 10px 0;
-    border-bottom: 1px solid #374151;
-}
-
-.summary-item strong {
-    color: #a5b4fc;
-}
-
-.summary-workshops {
-    margin: 10px 0;
-    padding-left: 20px;
-}
-
-.summary-total {
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 2px solid #4b5563;
-    font-size: 1.2rem;
-    font-weight: 700;
+.summary-placeholder-icon {
+  font-size: 2.5rem;
+  color: var(--border-light);
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .summary-empty {
-    color: #9ca3af;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
 }
 
+.summary-data-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-/* FOOTER */
+.summary-data-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.875rem;
+}
 
+.summary-data-item span:first-child {
+  color: var(--text-muted);
+}
+
+.summary-data-item span:last-child {
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: right;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.25rem;
+  margin-top: 0.5rem;
+  border-top: 2px solid var(--border-light);
+}
+
+.summary-total-label {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.summary-total-value {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--accent-white);
+}
+
+/* --- Footer --- */
 .footer {
-    padding: 35px 0;
-    background-color: #030712;
-    color: #9ca3af;
+  background-color: var(--bg-main);
+  padding: 4rem 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
 }
 
-/* RESPONSIVE */
-@media (max-width: 991px) {
-
-    .hero-section {
-        min-height: auto;
-        padding: 70px 0;
-    }
-
-    .hero-card {
-        margin-top: 40px;
-    }
-
-    .summary-card {
-        position: static;
-    }
+.footer-brand {
+  font-weight: 800;
+  color: var(--accent-white);
+  letter-spacing: 0.1em;
+  font-size: 1.1rem;
 }
 
-@media (max-width: 767px) {
+.footer-copy {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: #525252;
+}
 
-    .section-padding {
-        padding: 70px 0;
-    }
+/* --- Responsive Media Queries --- */
+@media (max-width: 991.98px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .summary-card {
+    position: static;
+  }
+}
 
-    .hero-title {
-        font-size: 3.5rem;
-    }
-
-    .hero-description {
-        font-size: 1rem;
-    }
-
-    .hero-card {
-        padding: 30px;
-    }
-
-    .hero-card-number {
-        font-size: 4rem;
-    }
-
-    .section-heading h2 {
-        font-size: 2rem;
-    }
-
-    .workshop-card .card-text {
-        min-height: auto;
-    }
-
-    .navbar {
-        padding: 12px 0;
-    }
-
-    .nav-link {
-        margin-left: 0;
-    }
+@media (max-width: 575.98px) {
+  .hero-title {
+    font-size: 2.25rem;
+  }
+  .participant-options {
+    flex-direction: column;
+  }
 }

@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>EVENTHUB - Informatics Workshop</title>
 
@@ -12,20 +18,39 @@
         rel="stylesheet"
     >
 
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
 
 <body>
 
+
     <!-- ==================== NAVBAR ==================== -->
+
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
             <div class="container">
 
-                <a class="navbar-brand fw-bold" href="#home">
+                <a
+                    class="navbar-brand fw-bold"
+                    href="#home"
+                >
                     EVENTHUB
                 </a>
+
 
                 <button
                     class="navbar-toggler"
@@ -36,45 +61,104 @@
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
+
                     <span class="navbar-toggler-icon"></span>
+
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarNav"
+                >
+
                     <ul class="navbar-nav ms-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">
-                                Beranda
+
+                            <a
+                                class="nav-link"
+                                href="#home"
+                            >
+                                Home
                             </a>
+
                         </li>
 
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#workshops">
+
+                            <a
+                                class="nav-link"
+                                href="#about"
+                            >
+                                About
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a
+                                class="nav-link"
+                                href="#workshops"
+                            >
                                 Workshop
                             </a>
+
                         </li>
 
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#registration">
-                                Pendaftaran
+
+                            <a
+                                class="nav-link"
+                                href="#schedule"
+                            >
+                                Schedule
                             </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a
+                                class="nav-link"
+                                href="#registration"
+                            >
+                                Registration
+                            </a>
+
                         </li>
 
                     </ul>
+
                 </div>
 
             </div>
+
         </nav>
+
     </header>
+
 
 
     <main>
 
-        <!-- HERO SECTION -->
-        <section id="home" class="hero-section">
+
+        <!-- ==================== HERO ==================== -->
+
+        <section
+            id="home"
+            class="hero-section"
+        >
 
             <div class="container">
-                <div class="row align-items-center">
+
+                <div class="row align-items-center g-5">
+
 
                     <div class="col-lg-7">
 
@@ -82,54 +166,95 @@
                             INFORMATICS WORKSHOP 2026
                         </p>
 
+
                         <h1 class="hero-title">
-                            Learn. Build.
+
+                            Learn.
+                            Build.
                             <span>Grow.</span>
+
                         </h1>
 
+
                         <p class="hero-description">
-                            Tingkatkan kemampuan teknologi dan kreativitas
-                            melalui workshop informatika yang dirancang
-                            untuk mahasiswa dan peserta umum.
+
+                            Enhance your technological skills and creativity through an informatics workshop desgined for university students and the general public.
+
                         </p>
+
 
                         <a
                             href="#registration"
-                            class="btn btn-primary btn-lg"
+                            class="btn btn-primary btn-lg hero-button"
                         >
-                            Daftar Sekarang
+
+                            Register Now
+
+                            <i class="bi bi-arrow-right ms-2"></i>
+
                         </a>
 
                     </div>
 
+
+
                     <div class="col-lg-5">
+
                         <div class="hero-card">
 
                             <span class="hero-card-number">
                                 03
                             </span>
 
+
                             <p>
-                                Workshop tersedia
+                                Workshops are available
                             </p>
+
 
                             <strong>
                                 Front-End · UI/UX · Cybersecurity
                             </strong>
 
+
+                            <div class="hero-card-line"></div>
+
+
+                            <div class="hero-card-meta">
+
+                                <span>
+                                    <i class="bi bi-calendar3"></i>
+                                    15–17 Nov 2026
+                                </span>
+
+                                <span>
+                                    <i class="bi bi-geo-alt"></i>
+                                    Universitas Pelita Harapan
+                                </span>
+
+                            </div>
+
                         </div>
+
                     </div>
 
                 </div>
+
             </div>
 
         </section>
 
 
-        <!-- ABOUT SECTION -->
-        <section class="section-padding">
+
+        <!-- ==================== ABOUT ==================== -->
+
+        <section
+            id="about"
+            class="section-padding"
+        >
 
             <div class="container">
+
 
                 <div class="section-heading">
 
@@ -137,64 +262,105 @@
                         ABOUT EVENT
                     </p>
 
+
                     <h2>
                         Explore Your Potential
                     </h2>
 
+
                     <p>
-                        EVENTHUB merupakan platform pendaftaran workshop
-                        informatika yang membantu peserta memilih kegiatan,
-                        mengisi data diri, dan mendapatkan ringkasan
-                        pendaftaran secara interaktif.
+
+                        EVENTHUB is an informatics workshop registration platform that helps participants choose activities, fill in their personal information, and receive an interactive registration summary.
+
+
                     </p>
 
                 </div>
 
+
+
                 <div class="row g-4 mt-3">
 
+
+                    <!-- INFO 1 -->
+
                     <div class="col-md-4">
+
                         <article class="info-box">
+
                             <div class="info-icon">
-                                01
+                                <i class="bi bi-lightning-charge-fill"></i>
                             </div>
 
-                            <h3>Practical</h3>
+
+                            <h3>
+                                Practical
+                            </h3>
+
 
                             <p>
-                                Materi dirancang agar peserta dapat
-                                mempraktikkan pengetahuan yang dipelajari.
+
+                                The materials are designed to allow participants to apply what they learn through hands-on experience.
                             </p>
+
                         </article>
+
                     </div>
 
+
+
+                    <!-- INFO 2 -->
+
                     <div class="col-md-4">
+
                         <article class="info-box">
+
                             <div class="info-icon">
-                                02
+                                <i class="bi bi-people-fill"></i>
                             </div>
 
-                            <h3>Interactive</h3>
+
+                            <h3>
+                                Interactive
+                            </h3>
+
 
                             <p>
-                                Peserta dapat memilih workshop sesuai
-                                kebutuhan dan minat masing-masing.
+
+                                Participants can choose workshops based on their individual needs and interests.
+
                             </p>
+
                         </article>
+
                     </div>
 
+
+
+                    <!-- INFO 3 -->
+
                     <div class="col-md-4">
+
                         <article class="info-box">
+
                             <div class="info-icon">
-                                03
+                                <i class="bi bi-rocket-takeoff-fill"></i>
                             </div>
 
-                            <h3>Future Ready</h3>
+
+                            <h3>
+                                Future Ready
+                            </h3>
+
 
                             <p>
-                                Bangun kemampuan yang relevan dengan
-                                perkembangan dunia teknologi.
+
+                                Build skills that are relevant to the ever-evolving world of technology.
+
                             </p>
+
                         </article>
+
                     </div>
 
                 </div>
@@ -204,10 +370,16 @@
         </section>
 
 
-        <!-- WORKSHOPS -->
-        <section id="workshops" class="section-padding workshop-section">
+
+        <!-- ==================== WORKSHOPS ==================== -->
+
+        <section
+            id="workshops"
+            class="section-padding workshop-section"
+        >
 
             <div class="container">
+
 
                 <div class="section-heading">
 
@@ -215,47 +387,110 @@
                         OUR WORKSHOPS
                     </p>
 
+
                     <h2>
                         Choose Your Workshop
                     </h2>
 
+
                     <p>
-                        Pilih satu atau beberapa workshop yang ingin kamu ikuti.
+
+                        Choose one or more workshops you’d like to join and develop your skills in technology.
+.
+
                     </p>
 
                 </div>
 
 
+
                 <div class="row g-4 mt-3">
 
-                    <!-- Front-End -->
+
+                    <!-- ================= FRONT-END ================= -->
+
                     <div class="col-md-4">
 
                         <article class="card workshop-card h-100">
 
-                            <div class="workshop-number">
-                                01
+
+                            <div class="workshop-image-wrapper">
+
+                                <img
+                                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+                                    alt="Front-End Web Workshop"
+                                    class="workshop-image"
+                                >
+
+
+                                <span class="workshop-badge">
+                                    01
+                                </span>
+
                             </div>
 
+
+
                             <div class="card-body">
+
+                                <p class="workshop-category">
+                                    WEB DEVELOPMENT
+                                </p>
+
 
                                 <h3 class="card-title">
                                     Front-End Web
                                 </h3>
 
+
                                 <p class="card-text">
-                                    Pelajari dasar HTML, CSS, Bootstrap,
-                                    dan JavaScript untuk membangun
-                                    website modern.
+
+                                    Learn the basics of HTML, CSS, Bootstrap, and JavaScript to build modern websites.
+
+
                                 </p>
 
-                                <div class="workshop-price">
-                                    Rp150.000
+
+
+                                <div class="workshop-details">
+
+                                    <div class="workshop-detail">
+
+                                        <i class="bi bi-calendar3"></i>
+
+                                        <span>
+                                            15 November 2026
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="workshop-detail">
+
+                                        <i class="bi bi-clock"></i>
+
+                                        <span>
+                                            09.00–12.00 · LP.506
+                                        </span>
+
+                                    </div>
+
                                 </div>
 
-                                <p class="workshop-info">
-                                    15 November 2026 · 09.00–12.00
-                                </p>
+
+
+                                <div class="workshop-bottom">
+
+                                    <div class="workshop-price">
+                                        Rp150.000
+                                    </div>
+
+
+                                    <span class="workshop-status">
+                                        Available
+                                    </span>
+
+                                </div>
 
                             </div>
 
@@ -264,33 +499,91 @@
                     </div>
 
 
-                    <!-- UI UX -->
+
+                    <!-- ================= UI UX ================= -->
+
                     <div class="col-md-4">
 
                         <article class="card workshop-card h-100">
 
-                            <div class="workshop-number">
-                                02
+
+                            <div class="workshop-image-wrapper">
+
+                                <img
+                                    src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=80"
+                                    alt="UI UX Design Workshop"
+                                    class="workshop-image"
+                                >
+
+
+                                <span class="workshop-badge">
+                                    02
+                                </span>
+
                             </div>
 
+
+
                             <div class="card-body">
+
+                                <p class="workshop-category">
+                                    DESIGN
+                                </p>
+
 
                                 <h3 class="card-title">
                                     UI/UX Design
                                 </h3>
 
+
                                 <p class="card-text">
-                                    Pelajari proses perancangan interface
-                                    dan pengalaman pengguna yang efektif.
+
+                                    Learn the process of designing effective interfaces and user experiences for digital products.
+
+
                                 </p>
 
-                                <div class="workshop-price">
-                                    Rp125.000
+
+
+                                <div class="workshop-details">
+
+                                    <div class="workshop-detail">
+
+                                        <i class="bi bi-calendar3"></i>
+
+                                        <span>
+                                            16 November 2026
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="workshop-detail">
+
+                                        <i class="bi bi-clock"></i>
+
+                                        <span>
+                                            09.00–12.00 · LP.501
+                                        </span>
+
+                                    </div>
+
                                 </div>
 
-                                <p class="workshop-info">
-                                    16 November 2026 · 09.00–12.00
-                                </p>
+
+
+                                <div class="workshop-bottom">
+
+                                    <div class="workshop-price">
+                                        Rp125.000
+                                    </div>
+
+
+                                    <span class="workshop-status">
+                                        Available
+                                    </span>
+
+                                </div>
 
                             </div>
 
@@ -299,39 +592,97 @@
                     </div>
 
 
-                    <!-- Cybersecurity -->
+
+                    <!-- ================= CYBERSECURITY ================= -->
+
                     <div class="col-md-4">
 
                         <article class="card workshop-card h-100">
 
-                            <div class="workshop-number">
-                                03
+
+                            <div class="workshop-image-wrapper">
+
+                                <img
+                                    src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80"
+                                    alt="Cybersecurity Workshop"
+                                    class="workshop-image"
+                                >
+
+
+                                <span class="workshop-badge">
+                                    03
+                                </span>
+
                             </div>
 
+
+
                             <div class="card-body">
+
+                                <p class="workshop-category">
+                                    CYBERSECURITY
+                                </p>
+
 
                                 <h3 class="card-title">
                                     Cybersecurity Dasar
                                 </h3>
 
+
                                 <p class="card-text">
-                                    Mengenal keamanan website, ancaman
-                                    digital, dan dasar perlindungan data.
+
+                                    Understanding website security, digital threats, and the fundamentals of data protection in the digital world.
+
                                 </p>
 
-                                <div class="workshop-price">
-                                    Rp175.000
+
+
+                                <div class="workshop-details">
+
+                                    <div class="workshop-detail">
+
+                                        <i class="bi bi-calendar3"></i>
+
+                                        <span>
+                                            17 November 2026
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="workshop-detail">
+
+                                        <i class="bi bi-clock"></i>
+
+                                        <span>
+                                            13.00–16.00 · LP.602
+                                        </span>
+
+                                    </div>
+
                                 </div>
 
-                                <p class="workshop-info">
-                                    17 November 2026 · 13.00–16.00
-                                </p>
+
+
+                                <div class="workshop-bottom">
+
+                                    <div class="workshop-price">
+                                        Rp175.000
+                                    </div>
+
+
+                                    <span class="workshop-status">
+                                        Available
+                                    </span>
+
+                                </div>
 
                             </div>
 
                         </article>
 
                     </div>
+
 
                 </div>
 
@@ -340,10 +691,16 @@
         </section>
 
 
-        <!-- SCHEDULE -->
-        <section class="section-padding">
+
+        <!-- ==================== SCHEDULE ==================== -->
+
+        <section
+            id="schedule"
+            class="section-padding"
+        >
 
             <div class="container">
+
 
                 <div class="section-heading">
 
@@ -351,52 +708,126 @@
                         SCHEDULE
                     </p>
 
+
                     <h2>
                         Workshop Schedule
                     </h2>
 
+
+                    <p>
+                        Please check the workshop schedule prior to registration.
+                    </p>
+
                 </div>
 
 
-                <div class="table-responsive mt-4">
 
-                    <table class="table table-bordered schedule-table">
+                <div class="table-wrapper mt-4">
 
-                        <thead>
-                            <tr>
-                                <th>Workshop</th>
-                                <th>Tanggal</th>
-                                <th>Waktu</th>
-                                <th>Ruangan</th>
-                            </tr>
-                        </thead>
+                    <div class="table-responsive">
 
-                        <tbody>
+                        <table class="table schedule-table">
 
-                            <tr>
-                                <td>Front-End Web</td>
-                                <td>15 November 2026</td>
-                                <td>09.00–12.00</td>
-                                <td>Lab 1</td>
-                            </tr>
+                            <thead>
 
-                            <tr>
-                                <td>UI/UX Design</td>
-                                <td>16 November 2026</td>
-                                <td>09.00–12.00</td>
-                                <td>Lab 2</td>
-                            </tr>
+                                <tr>
 
-                            <tr>
-                                <td>Cybersecurity Dasar</td>
-                                <td>17 November 2026</td>
-                                <td>13.00–16.00</td>
-                                <td>Lab 1</td>
-                            </tr>
+                                    <th>
+                                        Workshop
+                                    </th>
 
-                        </tbody>
+                                    <th>
+                                        Date
+                                    </th>
 
-                    </table>
+                                    <th>
+                                        Time
+                                    </th>
+
+                                    <th>
+                                        Room
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        <strong>
+                                            Front-End Web
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        15 November 2026
+                                    </td>
+
+                                    <td>
+                                        09.00–12.00
+                                    </td>
+
+                                    <td>
+                                        LP.506
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        <strong>
+                                            UI/UX Design
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        16 November 2026
+                                    </td>
+
+                                    <td>
+                                        09.00–12.00
+                                    </td>
+
+                                    <td>
+                                        LP.501
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        <strong>
+                                            Cybersecurity Dasar
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        17 November 2026
+                                    </td>
+
+                                    <td>
+                                        13.00–16.00
+                                    </td>
+
+                                    <td>
+                                        LP.602
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
 
                 </div>
 
@@ -405,10 +836,16 @@
         </section>
 
 
-        <!-- REGISTRATION FORM -->
-        <section id="registration" class="section-padding registration-section">
+
+        <!-- ==================== REGISTRATION ==================== -->
+
+        <section
+            id="registration"
+            class="section-padding registration-section"
+        >
 
             <div class="container">
+
 
                 <div class="section-heading">
 
@@ -416,98 +853,130 @@
                         REGISTRATION
                     </p>
 
+
                     <h2>
                         Register for EVENTHUB
                     </h2>
 
+
                     <p>
-                        Isi data berikut untuk melakukan pendaftaran workshop.
+                        Please fill in the following details to register for the workshop.
                     </p>
 
                 </div>
 
 
+
                 <div class="row g-5 mt-2">
 
-                    <!-- FORM -->
+
+                    <!-- ================= FORM ================= -->
+
                     <div class="col-lg-7">
 
-                        <form id="registrationForm" method="POST">
+                        <form
+                            id="registrationForm"
+                            method="POST"
+                            novalidate
+                        >
+
 
                             <!-- NAME -->
-                            <div class="mb-3">
 
-                                <label for="name" class="form-label">
-                                    Nama Lengkap
+                            <div class="mb-4">
+
+                                <label
+                                    for="name"
+                                    class="form-label"
+                                >
+                                    Full Name
                                 </label>
+
 
                                 <input
                                     type="text"
                                     class="form-control"
                                     id="name"
                                     name="name"
-                                    placeholder="Masukkan nama lengkap"
+                                    placeholder="Enter your full name"
                                     required
                                 >
 
                             </div>
 
 
-                            <!-- EMAIL -->
-                            <div class="mb-3">
 
-                                <label for="email" class="form-label">
+                            <!-- EMAIL -->
+
+                            <div class="mb-4">
+
+                                <label
+                                    for="email"
+                                    class="form-label"
+                                >
                                     Email
                                 </label>
+
 
                                 <input
                                     type="email"
                                     class="form-control"
                                     id="email"
                                     name="email"
-                                    placeholder="nama@email.com"
+                                    placeholder="ex. name@gmail.com"
                                     required
                                 >
 
                             </div>
 
 
-                            <!-- PHONE -->
-                            <div class="mb-3">
 
-                                <label for="phone" class="form-label">
-                                    Nomor HP
+                            <!-- PHONE -->
+
+                            <div class="mb-4">
+
+                                <label
+                                    for="phone"
+                                    class="form-label"
+                                >
+                                    Phone Number
                                 </label>
+
 
                                 <input
                                     type="tel"
                                     class="form-control"
                                     id="phone"
                                     name="phone"
-                                    placeholder="08123456789"
+                                    placeholder="081234567891"
                                     pattern="[0-9]{10,13}"
                                     minlength="10"
                                     maxlength="13"
                                     required
                                 >
 
+
                                 <div class="form-text">
-                                    Masukkan 10–13 digit angka.
+                                    Enter 10-13 digit number.
                                 </div>
 
                             </div>
 
 
+
                             <!-- PARTICIPANT TYPE -->
-                            <div class="mb-3">
+
+                            <div class="mb-4">
 
                                 <label class="form-label">
-                                    Tipe Peserta
+                                    Participant Type
                                 </label>
 
-                                <div>
 
-                                    <div class="form-check form-check-inline">
+                                <div class="participant-options">
+
+
+                                    <div class="form-check">
 
                                         <input
                                             class="form-check-input"
@@ -518,17 +987,20 @@
                                             required
                                         >
 
+
                                         <label
                                             class="form-check-label"
                                             for="student"
                                         >
-                                            Mahasiswa
+                                            <i class="bi bi-mortarboard me-2"></i>
+                                            Student
                                         </label>
 
                                     </div>
 
 
-                                    <div class="form-check form-check-inline">
+
+                                    <div class="form-check">
 
                                         <input
                                             class="form-check-input"
@@ -538,11 +1010,13 @@
                                             value="Umum"
                                         >
 
+
                                         <label
                                             class="form-check-label"
                                             for="general"
                                         >
-                                            Umum
+                                            <i class="bi bi-person me-2"></i>
+                                            Public
                                         </label>
 
                                     </div>
@@ -552,12 +1026,18 @@
                             </div>
 
 
-                            <!-- DATE -->
-                            <div class="mb-3">
 
-                                <label for="attendanceDate" class="form-label">
-                                    Tanggal Hadir
+                            <!-- DATE -->
+
+                            <div class="mb-4">
+
+                                <label
+                                    for="attendanceDate"
+                                    class="form-label"
+                                >
+                                    Attendance Date
                                 </label>
+
 
                                 <input
                                     type="date"
@@ -570,71 +1050,117 @@
                             </div>
 
 
-                            <!-- WORKSHOP CHECKBOX -->
-                            <div class="mb-3">
+
+                            <!-- WORKSHOP -->
+
+                            <div class="mb-4">
 
                                 <label class="form-label">
-                                    Pilihan Workshop
+                                    Workshop Options
                                 </label>
 
-                                <div class="form-check">
 
-                                    <input
-                                        class="form-check-input workshop-option"
-                                        type="checkbox"
-                                        name="workshop"
-                                        id="frontend"
-                                        value="Front-End Web"
-                                        data-price="150000"
-                                    >
+                                <div class="workshop-selection">
+
 
                                     <label
-                                        class="form-check-label"
+                                        class="selection-option"
                                         for="frontend"
                                     >
-                                        Front-End Web — Rp150.000
+
+                                        <input
+                                            class="form-check-input workshop-option"
+                                            type="checkbox"
+                                            name="workshop"
+                                            id="frontend"
+                                            value="Front-End Web"
+                                            data-price="150000"
+                                        >
+
+
+                                        <span class="selection-content">
+
+                                            <strong>
+                                                Front-End Web
+                                            </strong>
+
+                                            <small>
+                                                Rp150.000
+                                            </small>
+
+                                        </span>
+
+
+                                        <i class="bi bi-check-circle-fill selection-check"></i>
+
                                     </label>
 
-                                </div>
 
-
-                                <div class="form-check">
-
-                                    <input
-                                        class="form-check-input workshop-option"
-                                        type="checkbox"
-                                        name="workshop"
-                                        id="uiux"
-                                        value="UI/UX Design"
-                                        data-price="125000"
-                                    >
 
                                     <label
-                                        class="form-check-label"
+                                        class="selection-option"
                                         for="uiux"
                                     >
-                                        UI/UX Design — Rp125.000
+
+                                        <input
+                                            class="form-check-input workshop-option"
+                                            type="checkbox"
+                                            name="workshop"
+                                            id="uiux"
+                                            value="UI/UX Design"
+                                            data-price="125000"
+                                        >
+
+
+                                        <span class="selection-content">
+
+                                            <strong>
+                                                UI/UX Design
+                                            </strong>
+
+                                            <small>
+                                                Rp125.000
+                                            </small>
+
+                                        </span>
+
+
+                                        <i class="bi bi-check-circle-fill selection-check"></i>
+
                                     </label>
 
-                                </div>
 
-
-                                <div class="form-check">
-
-                                    <input
-                                        class="form-check-input workshop-option"
-                                        type="checkbox"
-                                        name="workshop"
-                                        id="cybersecurity"
-                                        value="Cybersecurity Dasar"
-                                        data-price="175000"
-                                    >
 
                                     <label
-                                        class="form-check-label"
+                                        class="selection-option"
                                         for="cybersecurity"
                                     >
-                                        Cybersecurity Dasar — Rp175.000
+
+                                        <input
+                                            class="form-check-input workshop-option"
+                                            type="checkbox"
+                                            name="workshop"
+                                            id="cybersecurity"
+                                            value="Cybersecurity Dasar"
+                                            data-price="175000"
+                                        >
+
+
+                                        <span class="selection-content">
+
+                                            <strong>
+                                                Cybersecurity Dasar
+                                            </strong>
+
+                                            <small>
+                                                Rp175.000
+                                            </small>
+
+                                        </span>
+
+
+                                        <i class="bi bi-check-circle-fill selection-check"></i>
+
                                     </label>
 
                                 </div>
@@ -642,12 +1168,18 @@
                             </div>
 
 
-                            <!-- SESSION -->
-                            <div class="mb-3">
 
-                                <label for="session" class="form-label">
-                                    Pilihan Sesi
+                            <!-- SESSION -->
+
+                            <div class="mb-4">
+
+                                <label
+                                    for="session"
+                                    class="form-label"
+                                >
+                                    Select Your Sessions
                                 </label>
+
 
                                 <select
                                     class="form-select"
@@ -657,7 +1189,7 @@
                                 >
 
                                     <option value="">
-                                        Pilih sesi
+                                        Select Session
                                     </option>
 
                                     <option value="Morning">
@@ -673,71 +1205,96 @@
                             </div>
 
 
+
                             <!-- DATALIST -->
+
                             <div class="mb-4">
 
                                 <label
                                     for="institution"
                                     class="form-label"
                                 >
-                                    Institusi
+                                    Institution
                                 </label>
+
 
                                 <input
                                     class="form-control"
                                     list="institution-list"
                                     id="institution"
                                     name="institution"
-                                    placeholder="Pilih atau ketik institusi"
+                                    placeholder="Select or Type your institution"
                                     required
                                 >
 
+
                                 <datalist id="institution-list">
 
-                                    <option value="Universitas">
-                                    <option value="Politeknik">
-                                    <option value="Sekolah">
-                                    <option value="Perusahaan">
-                                    <option value="Lainnya">
+                                    <option value="University">
+                                    <option value="School">
+                                    <option value="Company">
+                                    <option value="Others">
 
                                 </datalist>
 
                             </div>
 
 
+
+                            <!-- SUBMIT -->
+
                             <button
                                 type="submit"
-                                class="btn btn-primary btn-lg w-100"
+                                class="btn btn-primary btn-lg w-100 submit-button"
                             >
+
                                 Submit Registration
+
+                                <i class="bi bi-arrow-right ms-2"></i>
+
                             </button>
+
 
                         </form>
 
                     </div>
 
 
-                    <!-- SUMMARY -->
+
+                    <!-- ================= SUMMARY ================= -->
+
                     <div class="col-lg-5">
 
                         <aside class="summary-card">
+
 
                             <p class="section-label">
                                 YOUR REGISTRATION
                             </p>
 
+
                             <h3>
                                 Registration Summary
                             </h3>
+
 
                             <div
                                 id="summaryContent"
                                 class="summary-content"
                             >
 
+                                <div class="summary-placeholder-icon">
+
+                                    <i class="bi bi-receipt"></i>
+
+                                </div>
+
+
                                 <p class="summary-empty">
+
                                     Ringkasan pendaftaran akan muncul
                                     setelah form berhasil dikirim.
+
                                 </p>
 
                             </div>
@@ -746,26 +1303,36 @@
 
                     </div>
 
+
                 </div>
 
             </div>
 
         </section>
 
+
     </main>
 
 
-    <!-- FOOTER -->
+
+    <!-- ==================== FOOTER ==================== -->
+
     <footer class="footer">
 
         <div class="container text-center">
 
-            <p class="mb-1 fw-bold">
+            <p class="footer-brand">
                 EVENTHUB
             </p>
 
+
             <p class="mb-0">
                 Informatics Workshop Registration System
+            </p>
+
+
+            <p class="footer-copy">
+                © 2026 EVENTHUB. All rights reserved.
             </p>
 
         </div>
@@ -773,13 +1340,19 @@
     </footer>
 
 
+
     <!-- Bootstrap JavaScript -->
+
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     ></script>
 
+
     <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
+
+    <script src="script.js"></script>
+
 
 </body>
+
 </html>
