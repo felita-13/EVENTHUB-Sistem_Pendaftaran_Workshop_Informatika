@@ -115,3 +115,263 @@ section {
     margin-bottom: 8px;
     color: #d1d5db;
 }
+
+/* SECTIONS */
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-heading {
+    max-width: 700px;
+}
+
+.section-heading h2 {
+    color: var(--dark-color);
+    font-size: 2.5rem;
+    font-weight: 750;
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    margin-bottom: 0;
+}
+
+/* INFO BOX */
+.info-box {
+    height: 100%;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    background-color: var(--white);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.info-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #eef2ff;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.info-box h3 {
+    color: var(--dark-color);
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+/* WORKSHOP */
+.workshop-section {
+    background-color: var(--light-bg);
+}
+
+.workshop-card {
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    overflow: hidden;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.workshop-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.workshop-number {
+    padding: 20px 25px 0;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.workshop-card .card-body {
+    padding: 25px;
+}
+
+.workshop-card .card-title {
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.workshop-card .card-text {
+    min-height: 100px;
+}
+
+.workshop-price {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.workshop-info {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: 8px;
+}
+
+/* TABLE */
+.schedule-table {
+    background-color: var(--white);
+    vertical-align: middle;
+}
+
+.schedule-table thead th {
+    background-color: var(--dark-color);
+    color: var(--white);
+    padding: 15px;
+}
+
+.schedule-table tbody td {
+    padding: 15px;
+}
+
+/* REGISTRATION */
+.registration-section {
+    background-color: #f9fafb;
+}
+
+.registration-section .form-label {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    padding: 12px 14px;
+    border-color: #d1d5db;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(99, 91, 255, 0.15);
+}
+
+/* SUMMARY */
+.summary-card {
+    position: sticky;
+    top: 100px;
+    padding: 30px;
+    background-color: var(--dark-color);
+    color: var(--white);
+    border-radius: 20px;
+}
+
+.summary-card h3 {
+    margin-bottom: 25px;
+}
+
+.summary-content {
+    border-top: 1px solid #374151;
+    padding-top: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #374151;
+}
+
+.summary-item strong {
+    color: #a5b4fc;
+}
+
+.summary-workshops {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.summary-total {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #4b5563;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.summary-empty {
+    color: #9ca3af;
+}
+
+
+/* FOOTER */
+
+.footer {
+    padding: 35px 0;
+    background-color: #030712;
+    color: #9ca3af;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+
+    .hero-section {
+        min-height: auto;
+        padding: 70px 0;
+    }
+
+    .hero-card {
+        margin-top: 40px;
+    }
+
+    .summary-card {
+        position: static;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-card {
+        padding: 30px;
+    }
+
+    .hero-card-number {
+        font-size: 4rem;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .workshop-card .card-text {
+        min-height: auto;
+    }
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+}
